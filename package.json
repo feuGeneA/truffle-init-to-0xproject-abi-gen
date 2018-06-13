@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "pretsc": "yarn abi-gen",
     "tsc": "tsc",
     "preabi-gen": "truffle compile",
     "abi-gen": "abi-gen --abis 'build/contracts/*.json' --out build/types --template contract_templates/contract.handlebars --partials 'contract_templates/partials/*.handlebars'",
