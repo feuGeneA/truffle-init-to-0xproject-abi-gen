@@ -8,12 +8,21 @@
   },
   "scripts": {
     "tsc": "tsc",
+    "preabi-gen": "truffle compile",
+    "abi-gen": "abi-gen --abis 'build/contracts/*.json' --out build/types --template contract_templates/contract.handlebars --partials 'contract_templates/partials/*.handlebars'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@0xproject/abi-gen": "^0.3.0",
+    "@0xproject/base-contract": "^0.3.2",
+    "@0xproject/sol-compiler": "^0.5.0",
+    "@0xproject/types": "^0.7.0",
+    "@0xproject/utils": "^0.6.2",
+    "@0xproject/web3-wrapper": "^0.7.0",
+    "ethers": "^3.0.21",
+    "lodash": "^4.17.10",
     "typescript": "^2.9.1"
   }
 }
