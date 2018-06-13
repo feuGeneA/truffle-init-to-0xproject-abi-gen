@@ -7,11 +7,13 @@
     "test": "test"
   },
   "scripts": {
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@0xproject/abi-gen": "^0.3.0"
+    "@0xproject/abi-gen": "^0.3.0",
+    "typescript": "^2.9.1"
   }
 }
